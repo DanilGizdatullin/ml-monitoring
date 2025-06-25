@@ -34,16 +34,16 @@ jobs:
 
       - name: Run pytest
         run: |
-          pytest tests/
+          uv runpytest tests/
 
       - name: Ruff format check
         run: |
-          ruff format --check src/ tests/
+          uv run ruff format --check src/ tests/
 
       - name: Ruff check
         run: |
-          ruff check src/ tests/
+          uv run ruff check src/ tests/
 
       - name: Pyright type-check
         run: |
-          pyright src/
+          uv run pyright src/
