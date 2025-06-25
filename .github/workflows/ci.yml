@@ -34,7 +34,7 @@ jobs:
 
       - name: Run pytest
         run: |
-          uv runpytest tests/
+          uv run pytest tests/
 
       - name: Ruff format check
         run: |
